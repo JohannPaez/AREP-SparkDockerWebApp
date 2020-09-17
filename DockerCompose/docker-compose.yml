@@ -1,0 +1,31 @@
+version: '2'
+
+ 
+
+services:
+    web:
+        build:
+            context: ../
+            dockerfile: Dockerfile
+        container_name: web
+        ports:
+            - "8087:6000"
+
+    db:
+        image: mongo:latest
+        container_name: arep-mongo-db1
+        environment:
+            MONGO_INITDB_DATABASE: AREP-DOCKER-01
+            MONGO_INITDB_ROOT_USERNAME: najoh2907
+            MONGO_INITDB_ROOT_PASSWORD: Prueba123@
+        volumes: 
+            - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+            - mongodb:/data/db
+            - mongodb_config:/data/configdb
+        ports:
+            - 27017:27017
+        command: mongod
+
+volumes:
+    mongodb:
+    mongodb_config:

@@ -10,10 +10,10 @@ public class SparkWebServer {
 
 	public static void main(String... args) {
 		ServicesHttp servicesHttp = new ServicesHttp();
-		port(getPort());
-		staticFiles.location("/public");
+		port(getPort());	
 		get("hello", (req, res) -> "Hello Docker!");
 		get("/mensajes", (req, res) -> {
+			System.out.println("Peticion get /mensajes");
 			return servicesHttp.getMensajes();
 		});
 		post("/addMensaje", (request, response) -> {

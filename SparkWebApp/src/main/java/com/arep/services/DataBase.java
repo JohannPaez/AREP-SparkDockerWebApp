@@ -21,9 +21,10 @@ public class DataBase {
 	
 	
 	/**
-	 * Realiza la conexión con la base de datos
+	 * Realiza la conexiï¿½n con la base de datos
 	 */
 	public DataBase() {
+		// arep-mongo-db1 localhost
 		MongoClientURI uri = new MongoClientURI(
 		    "mongodb://najoh2907:Prueba123%40@arep-mongo-db1:27017/?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=AREP-DOCKER-01&authMechanism=SCRAM-SHA-256&3t.uriVersion=3&3t.connection.name=AREP-DOCKER-01");		
 		MongoClient mongoClient = new MongoClient(uri);
@@ -49,7 +50,6 @@ public class DataBase {
 		String data ="[";
 		Mensaje mensaje;
 		int cont = 0;
-        
 		for (Document d : columnas.find()) {
         	cont++;
         	if (columnas.countDocuments() - cont < 10) {
@@ -58,6 +58,7 @@ public class DataBase {
         	}
         	
         }
+		if (columnas.countDocuments() == 0) data = "[  ";
         data = data.substring(0, data.length() - 2);
         data += "]";
         return data;

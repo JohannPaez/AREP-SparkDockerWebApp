@@ -3,13 +3,24 @@ version: '2'
  
 
 services:
+    loadbalancer:
+        build:
+            context: ../LoadBalancer
+            dockerfile: Dockerfile
+        depends_on:
+            - web
+        container_name: AREP-LOAD-BALANCER
+        ports:
+            - "10000:6000"
+
     web:
         build:
-            context: ../
+            context: ../SparkWebApp
             dockerfile: Dockerfile
-        container_name: web
+        depends_on:
+            - db
         ports:
-            - "8087:6000"
+            - "10001-10003:6000"
 
     db:
         image: mongo:latest

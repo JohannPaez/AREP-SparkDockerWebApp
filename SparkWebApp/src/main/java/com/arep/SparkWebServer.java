@@ -5,9 +5,18 @@ import static spark.Spark.*;
 
 import com.arep.services.ServicesHttp;
 
-
+/**
+ * 
+ * @author SebastianPaez
+ *
+ */
 public class SparkWebServer {
 
+	
+	/**
+	 * Ejecuta la aplicación para poder utilizar los servicios
+	 * @param args Son los parametros al momento de ejecutar.
+	 */
 	public static void main(String... args) {
 		ServicesHttp servicesHttp = new ServicesHttp();
 		port(getPort());	
@@ -25,6 +34,10 @@ public class SparkWebServer {
 		
 	}
 
+	/**
+	 * Funcion que retorna el número del puerto por el cual se correrá el servicio.
+	 * @return El número de puerto del servicio.
+	 */
 	private static int getPort() {
 		if (System.getenv("PORT") != null) {
 			return Integer.parseInt(System.getenv("PORT"));

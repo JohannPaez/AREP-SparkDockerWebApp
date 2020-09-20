@@ -1,19 +1,5 @@
 var app = (function () {
-
-    function bubble(arr) {
-        var len = arr.length;
-        for (var i = 0; i < len ; i++) {
-            for(var j = 0 ; j < len - i - 1; j++){ 
-                if (arr[j].fecha < arr[j + 1].fecha) {
-                    // swap
-                    var temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j + 1] = temp;
-                }
-            }
-        }
-        return arr;
-    }
+    
     var tableConstructor = function(error, data) {
         if (error != null) {
             alert("Ocurrio un error al cargar los datos");
@@ -34,7 +20,7 @@ var app = (function () {
 							"</tr>" +
 						"</thead>" +
                         "<tbody>";
-            bubble(dataTable).forEach(function(mensaje) {
+            dataTable.forEach(function(mensaje) {
                 tabla += "<tr>" +
                             "<td>" + mensaje.mensaje + "</td>" +
                             "<td>" + mensaje.fecha + "</td>" +

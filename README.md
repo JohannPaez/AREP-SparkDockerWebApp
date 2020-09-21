@@ -7,9 +7,9 @@
    
  ## Prerequisitos
  Tener instalado:
- - Java
- - Maven
- - Docker
+ - Java.
+ - Maven.
+ - Docker.
  
  Entender sobre peticiones http, docker (contenedores), servidores y demás, así como el lenguaje JAVA en el que fue realizado este proyecto.
  
@@ -53,22 +53,12 @@ Una vez el proyecto termine de crearse, puede acceder al aplicativo web mediante
 
 
 
-
-## Ejemplos de uso con maven
-Para ello nos dirigimos a la carpeta principal del proyecto, dependiendo de lo que queramos hacer.
-
-Si queremos compilar el proyecto y ver que no tiene fallos, utilizamos el comando **mvn package**.
-
-Si queremos ejecutar las pruebas y ver que todo está perfecto, utilizamos el comando **mvn test**.
-
-**NOTA:** El comando **mvn package** compila y ejecuta las pruebas al mismo tiempo.
-
 ## Construido 
-[Eclipse](https://www.eclipse.org/) Editor de JAVA donde se puede compilar el proyecto.
+- [Eclipse](https://www.eclipse.org/) Editor de JAVA donde se puede compilar el proyecto.
 
-[Maven](https://maven.apache.org/) Administrador de dependencias.
+- [Maven](https://maven.apache.org/) Administrador de dependencias.
 
-[Docker](https://www.docker.com/) Administrador de contenedores.
+- [Docker](https://www.docker.com/) Administrador de contenedores.
 
 ## Autor
 **Johann Sebastian Páez Campos** - Trabajo Programación AREP-DockerSparkWebApp **21/09/2020**

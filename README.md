@@ -65,12 +65,14 @@ Si queremos ejecutar las pruebas y ver que todo está perfecto, utilizamos el co
 **NOTA:** El comando **mvn package** compila y ejecuta las pruebas al mismo tiempo.
 
 ## Construido 
-[Eclipse](https://www.eclipse.org/) Editor de JAVA donde se puede compilar el proyecto. 
+[Eclipse](https://www.eclipse.org/) Editor de JAVA donde se puede compilar el proyecto.
+
 [Maven](https://maven.apache.org/) Administrador de dependencias.
+
 [Docker](https://www.docker.com/) Administrador de contenedores.
 
 ## Autor
-Johann Sebastian Páez Campos - Trabajo Programación AREP-DockerSparkWebApp 21/09/2020
+**Johann Sebastian Páez Campos** - Trabajo Programación AREP-DockerSparkWebApp **21/09/2020**
 
 ## Licencia
 Este programa es de uso libre, puede ser usado por cualquier persona.

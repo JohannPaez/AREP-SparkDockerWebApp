@@ -12,6 +12,15 @@ La arquitectura descrita anteriormente se puede ver en la siguiente imagen.
 
 ![](Images/Diagrama.png)
 
+## LoadBalancer
+El proyecto se encuentra disponible [aquí](https://github.com/JohannPaez/AREP-LoadBalancer-SparkDockerWebApp).
+#### Integración Continua
+[![CircleCI](https://circleci.com/gh/JohannPaez/AREP-LoadBalancer-SparkDockerWebApp.svg?style=svg)](https://circleci.com/gh/JohannPaez/AREP-LoadBalancer-SparkDockerWebApp)
+
+## SparkWebApp
+El proyecto se encuentra disponible [aquí](https://github.com/JohannPaez/AREP-SparkWebApp-SparkDockerWebApp).
+#### Integración Continua
+[![CircleCI](https://circleci.com/gh/JohannPaez/AREP-SparkWebApp-SparkDockerWebApp.svg?style=svg)](https://circleci.com/gh/JohannPaez/AREP-SparkWebApp-SparkDockerWebApp)
 
   ## Diseño
  Los detalles del diseño, la arquitectura del programa, problema, definiciones y pruebas se pueden encontrar en el siguiente documento [Artículo Sobre el Diseño]().

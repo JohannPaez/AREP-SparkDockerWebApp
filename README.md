@@ -1,5 +1,16 @@
 # AREP-SparkDockerWebApp
 
+## Resumen
+El objetivo de este laboratorio es implementar un aplicativo web usando el framework de Spark para java, con la cual se construirá un contenedor docker para la aplicación y se configurará para nuestra máquina local.
+Posteriormente crearemos un repositorio en DockerHub y subiremos la imagen al repositorio.
+Finalmente crearemos una máquina virtual en AWS, instalaremos Docker y desplegaremos el contenedor creado anteriormente para poder utilizar el aplicativo web.
+
+El aplicativo web cuenta con un balanceador de carga y tres nodos, el balanceador se encargará de enviar las peticiones a los distintos nodos mediante el algoritmo de balanceo de cargas de Round Robin.
+Estos nodos se conectarán a una base de datos mongo para poder obtener los datos y retornarlos.
+
+La arquitectura descrita anteriormente se puede ver en la siguiente imagen.
+
+![](Images/Diagrama.png)
 
 
   ## Diseño
@@ -37,9 +48,8 @@ Luego acceda al directorio DockerCompose y ejecute el siguiente comando para cre
 
     docker-compose up -d --scale web=3
 
-Una vez el proyecto termine de crearse, puede acceder al aplicativo web mediante http://localhost:10000/.
-        
- 
+Una vez el proyecto termine de crearse, puede acceder al aplicativo web mediante http://localhost:10000/.       
+
  ## Operaciones
  - **GET**: Permite realizar peticiones get definidas por el usuario como (retornar los mensajes en este caso).
  	- **/mensajes**: Es la operación encargada de dar todos los mensajes.

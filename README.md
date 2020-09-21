@@ -48,9 +48,60 @@ Una vez el proyecto termine de crearse, puede acceder al aplicativo web mediante
 
 
 ## Pruebas
+### Local
+Aplicativo web funcionando correctamente en el puerto 10000 y contenido de los mensajes de la base de datos Mongo.
 
+![](Images/imagen1.png)
 
+Agregar un nuevo mensaje a la base de datos mediante el aplicativo.
 
+![](Images/imagen2.png)
+
+Mensaje agregado correctamente a la base de datos 
+
+![](Images/imagen3.png)
+
+Contenido de la base de datos mediante el cliente Studio 3T.
+
+![](Images/imagen4.png)
+
+Petición Post al servidor web usando Curl para añadir un nuevo mensaje a la base de datos.
+
+![](Images/imagen2_2.png)
+
+Petición Get al servidor web usando Curl para ver todos los mensajes de la base de datos.
+
+![](Images/imagen2_3.png)
+
+Logs del balanceador de carga al realizar las anteriores operaciones (se puede evidenciar el balanceo de cargas de Round Robin, delegando el procesamiento del mensaje).
+
+![](Images/imagen5.png)
+
+### AWS
+
+Aplicativo web funcionando correctamente en AWS en el puerto 10000 y contenido de los mensajes de la base de datos Mongo.
+
+![](Images/imagen6.png)
+
+Logs del balanceador de carga de AWS (se puede evidenciar el balanceo de cargas de Round Robin, delegando el procesamiento del mensaje).
+
+![](Images/imagen7.png)
+
+Contenido de la base de datos mediante el cliente Studio 3T.
+
+![](Images/imagen8.png)
+
+Petición Post al servidor web en AWS usando Curl para añadir un nuevo mensaje a la base de datos.
+
+![](Images/imagen9.png)
+
+Petición Get al servidor web usando Curl para comprobar que el mensaje anterior se agrego correctamente.
+
+![](Images/imagen10.png)
+
+Contenido del aplicativo web después de realizar la petición Post mediante el curl.
+
+![](Images/imagen11.png)
 
 
 ## Construido 

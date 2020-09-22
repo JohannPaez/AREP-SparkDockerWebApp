@@ -23,19 +23,7 @@
     <script src="js/apiclient.js"></script>
     <script src="js/app.js"></script>
     
-    <script>
-        function checkString(as) {
-            var a = as.value;                        
-            var res = a.replace(/[^\D]/g, '');
-            as.value = res.replace(/[*,.?¿´:;{}¡!'"\[\]/\\]/g, "");
-        }
 
-        function checknum(as) {
-            var a = as.value;
-            as.value = a.replace(/[^\d]/g, '');
-        }
-                
-    </script>
 </head>
 <body onload="app.loadTableMessages()">
     <br><br>    
@@ -54,7 +42,7 @@
             <h3 for="inputEmail3" class="col-sm-2 col-form-label"> MENSAJE: </h3>
             <div class="col-sm-10">
                 <textarea type = "text" class="form-control is-invalid" id="idMessage" placeholder="Escriba el mensaje que desea agregar" 
-                onkeyup="checkString(this)" required></textarea>
+                required></textarea>
             </div>
         </div>
             

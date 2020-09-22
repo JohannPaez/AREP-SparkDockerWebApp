@@ -59,6 +59,8 @@ Luego acceda al directorio DockerCompose y ejecute el siguiente comando para cre
 
 Una vez el proyecto termine de crearse, puede acceder al aplicativo web mediante http://localhost:10000/.       
 
+**Importante**: Si sólo deseas utilizar el aplicativo, puedes hacerlo accediendo al siguiente enlace http://ec2-3-84-114-195.compute-1.amazonaws.com:10000/.
+
  ## Operaciones
  - **GET**: Permite realizar peticiones get definidas por el usuario como (retornar los mensajes en este caso).
  	- **/mensajes**: Es la operación encargada de dar todos los mensajes.

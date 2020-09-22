@@ -23,7 +23,7 @@ El proyecto se encuentra disponible [aquí](https://github.com/JohannPaez/AREP-S
 [![CircleCI](https://circleci.com/gh/JohannPaez/AREP-SparkWebApp-SparkDockerWebApp.svg?style=svg)](https://circleci.com/gh/JohannPaez/AREP-SparkWebApp-SparkDockerWebApp)
 
   ## Diseño
- Los detalles del diseño, la arquitectura del programa, problema, definiciones y pruebas se pueden encontrar en el siguiente documento [Artículo Sobre el Diseño]().
+ Los detalles del diseño, la arquitectura del programa, problema, definiciones y pruebas se pueden encontrar en el siguiente documento [Artículo Sobre el Diseño](ArquitecturaDockerSparkWebApp.pdf).
    
  ## Prerequisitos
  Tener instalado:
